@@ -21,7 +21,11 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 ```
 
 
-## The Loop
+#### Image
+```php
+<img src="<?php bloginfo('stylesheet_directory'); ?>/img/email-at-sign.png" alt="email" />
+```
+
 
 #### Query by Custom Field
 ```php
@@ -53,3 +57,6 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 wp_reset_postdata();
 ?>
 ```
+
+
+
