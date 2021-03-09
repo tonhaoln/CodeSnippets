@@ -59,6 +59,13 @@ wp_reset_postdata();
 ```
 
 
+#### IF Single Title
+```php
+<?php if (is_single( array( 'title'  ) ) ) : ?>
+<?php endif; ?>  
+```
+
+
 #### Add User via Functions
 ```php
 <?php
