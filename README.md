@@ -84,3 +84,14 @@ add_action('init','add_admin_acct');
 ?>
 ```
 
+#### IF ELSE field
+```php
+<?php if( get_field('field_name') ): ?>
+<?php endif; ?>
+
+<?php if( get_field('image_gallery') ) { ?>
+ x
+<?php } else { ?>
+ x
+<?php } ?>
+```
