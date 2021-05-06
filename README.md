@@ -59,8 +59,13 @@ wp_reset_postdata();
 ```
 
 
-#### IF Single Title
+#### IF Page / Single Title
 ```php
+<?php if (is_front_page()) { ?>
+<?php } elseif (is_page('page name')) { ?>
+<?php } else { ?>    
+<?php } ?>
+
 <?php if (is_single( array( 'title'  ) ) ) : ?>
 <?php endif; ?>  
 ```
@@ -70,9 +75,9 @@ wp_reset_postdata();
 ```php
 <?php
 function add_admin_acct(){
-	$login = 'matt';
-	$passw = 'mte2015';
-	$email = 'matt@emptyhead.com.au';
+	$login = 'temp';
+	$passw = 'temp2021';
+	$email = 'temp@temp.com.au';
 
 	if ( !username_exists( $login )  && !email_exists( $email ) ) {
 		$user_id = wp_create_user( $login, $passw, $email );
